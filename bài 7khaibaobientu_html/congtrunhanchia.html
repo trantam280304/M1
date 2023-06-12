@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <h2> Caculator </h2><br>
+    <input type="number" id="so1" placeholder="Số thứ nhất">
+    <input type="number" id="so2" placeholder="Số thứ hai"><br><br>
+    <button type="button" onclick="Addtion()">Cộng</button>
+    <button type="button" onclick="Subtraction()" >Trừ</button>
+    <button type="button" onclick="Mutiplication()">Nhân</button>
+    <button type="button" onclick="Division()" >Chia</button>
+    <h3>Result:</h3>
+    <div id="result">Đây là kết quả</div>
+
+</form> 
+    
+
+</body>
+</html>
+<script>
+    function Addtion(){
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+       so1 = parseInt(so1);
+       so2 = parseInt(so2);
+        let result = (so1)+ (so2);
+   document.getElementById("result").innerHTML = result;
+    }
+    function Subtraction(){
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+        so1 = parseInt(so1);
+        so2 = parseInt(so2);
+        let result = (so1) - (so2);
+        document.getElementById("result").innerHTML= result;
+        
+    }
+    function Mutiplication(){
+        let so1= document.getElementById("so1").value
+        let so2=document.getElementById("so2").value
+        so1 = parseInt(so1);
+        so2 = parseInt(so2);
+        let result = so1 * so2
+        document.getElementById("result").innerHTML= result;
+    }
+    function Division(){
+        let so1= document.getElementById("so1").value
+        let so2=document.getElementById("so2").value
+        so1 = parseInt(so1);
+        so2 = parseInt(so2);
+        let result = so1 / so2
+        document.getElementById("result").innerHTML= result;
+    }
+</script>
