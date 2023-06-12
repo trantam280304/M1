@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <th><label for="Amount">Amount</label></th>
+                <th >From Currency</th>   
+                <th >ToCurrency</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><input type="text" id="Amount"></td>
+                <td>
+                    <select id="Quoc_gia">
+                        <option value="VNĐ">Việt Nam</option>
+                        <option value="USD">USĐ</option>
+                    </select>
+                </td>
+                <td> <select id="ti_gia">
+                        <option value="VNĐ">VNĐ</option>
+                        <option value="USD">Mỹ</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="button" onclick="Tien_te()" value="Convert">
+                </td>
+            </tr>
+        </table>
+
+        <p id = "Result"></p>
+        
+        
+    </form>
+    <script> 
+    function Tien_te(){
+        let Amount = document.getElementById("Amount").value;
+        let Quoc_gia = document.getElementById("Quoc_gia").value;
+        let ti_gia = document.getElementById("ti_gia").value;
+        let Result 
+        if(Quoc_gia == 'USD' && ti_gia == 'VNĐ'){
+            Result = " Result :"+ ( Amount*23000)+ "VNĐ" ;
+        }
+        else if(Quoc_gia == 'VNĐ' && ti_gia== 'USD'){
+            Result = " Result :"+ ( Amount/23000)+ "USD" ;
+        }else if(Quoc_gia == 'USD' && ti_gia== 'USD'){
+            Result = " Result :"+ ( Amount*1)+ "USD" ;
+        }else{
+            Result = " Result :"+ ( Amount*1)+ "VNĐ " ;
+        }
+     
+
+        document.getElementById("Result").innerHTML= Result
+      
+    }
+    </script>
+
+</body>
+
+</html>
