@@ -12,16 +12,18 @@
     <script>
         let username = prompt("Ten_dang_nhap");
         if (username == 'tranquangtam') {
-            alert('Chào mừng');
-        } else if (username == "") {
+
+            let pass = prompt('Mat_khau');
+            if (pass == 1234) {
+                alert('chào mừng');
+            } else if (pass == "") {
+                alert('khong chao mung');
+            }
+
+        } else if (username == "null") {
             alert('không chào mừng');
         }
-        let pass = prompt('Mat_khau');
-        if (pass == 1234) {
-            alert('chào mừng');
-        } else if (pass == "") {
-            alert('khong chao mung');
-        }
+
     </script>
 </body>
 
