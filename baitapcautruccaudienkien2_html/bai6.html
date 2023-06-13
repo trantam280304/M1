@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt('nhập a'))
+        let b = parseInt(prompt('nhập b'))
+        let c = parseInt(prompt('nhập c'))
+        let x;
+        let x1;
+        let x2;
+        let delta = (b * b) - (4 * a * c)
+        if (delta < 0) {
+            alert('phương trình bậc 2 vô nghiệm')
+        }
+        else if (delta === 0) {
+            let x1 = x2 = -b / (2 * a)
+            alert('phương trình bậc 2 có hai nghiệm kép là : '+ x1 )
+        }
+           
+        else {
+            let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            alert('phương trình bậc 2 có hai nghiệm phân biệt là : '+ 'x1 ='+ x1 + ',' + 'x2 =' + x2)
+            
+        }
+        
+
+
+    </script>
+
+</body>
+
+</html>
