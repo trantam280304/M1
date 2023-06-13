@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let A = parseInt(prompt('nhap vao so nguyen A'));
+        let B = parseInt(prompt('nhap vao so nguyen B'));
+        let C = parseInt(prompt('nhap vao so nguyen C'));
+        // if( A > B && B > C){
+        //     alert('A là số lớn nhất')
+        // }
+        // else if ( B >A && B>C){
+        //     alert('B là số lớn nhất')
+        // }
+        // else if( C>A && C>B){
+        //     alert('C là số lớn nhất')
+        // }
+        // else if (A==B && C>B){
+        //     alert('C là số lớn nhất')
+        // }
+        // else if (A==C && B>C){
+        //     alert('B là số lớn nhất')
+        // }
+        //    else{
+        //    alert('các số nguyên bằng nhau')
+        //   }
+
+        switch (true) {
+            case (A > B && B > C):
+                alert('A là số lớn nhất' + A)
+                break;
+            case (C > A && C > B):
+                alert('C là số lớn nhất' + C)
+                break;
+            case (B > A && B > C):
+                alert('B là số lớn nhất' + B)
+            default:
+                alert('các số nguyên bằng nhau')
+                break;
+        }
+    </script>
+</body>
+
+</html>

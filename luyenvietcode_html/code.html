@@ -1,22 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form>
-        <script>
-            let color = prompt('nhập màu cần kiểm tra');
-            switch(color){
-                case 'red':
-                    document.write("Bạn cần nhập màu đỏ,đúng rồi đó ");
-                case 'yellow':
-                document.write("Bạn cần nhập màu vàng đúng r đó")
-                break;
-            }
-        </script>
+
+    <!-- <script>
+        let Thu = prompt('Nhap thu')
+        if (Thu == 2 || Thu == 3 || Thu == 4 || Thu == 5 || Thu == 6) {
+            alert('Di lam')
+        }
+        else if (Thu == 7) {
+            alert('hoc them')
+        } else  {
+            alert('nghi ngoi')
+        }
+    </script> -->
+
+    <!-- <script>
+        let thang = prompt('nhap thang')
+        if(thang==1){
+          alert('31 ngay')
+        } 
+        else if(thang==2){
+            alert('28 ngay')
+        }else{
+            alert('30 ngay')
+        }
+    </script> -->
+
+    <script>
+        // switch (variable) {
+        //     case value_1:
+        //         // khoi lenh dc thu thi
+        //         break;
+
+        //     case value_2:
+        //         //  khoi lenh dc thu thi
+        //         break;
+
+        //     default:
+        //     // khoi len mac dinh se thuc thi neu khong chon dc truong hop nao
+        // }
+
+
+        // let thu = parseInt(prompt('nhap thu'))
+
+        // switch (thu) {
+        //     case 1:
+        //         alert('dilam');
+        //     case 2:
+        //     case 3:
+        //     case 4:
+        //     case 4:
+        //     case 6:
+        //         alert('di lam');
+        //         break;
+        //     case 7:
+        //         alert('hoc them');
+        //       break;
+        //     default:
+        //         alert('nghi ngoi');
+        //         break;
+        // }
+        // let thoitiet = prompt('nhap vao thoi tiet');
+        // if (thoitiet == 'dep') {
+        //     alert('di choi');
+        // }
+        // else{
+        //     alert('o nha')
+        // }
+        let thoitiet = prompt('nhap vao thoi tiet');
+        let Ketqua = ''
+        Ketqua = (thoitiet == 'dep') ? 'di choi' : 'o nha';
+        alert(Ketqua)
+    </script>
     </form>
 </body>
+
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let doanh_thu = parseInt(prompt('nhập số doanh thu'))
+        let hoa_hong = 0;
+        if (doanh_thu < 10) {
+            hoa_hong = doanh_thu * 0.05
+        }
+        else if (doanh_thu > 10){
+            hoa_hong = doanh_thu * 0.1
+        }
+        else{
+                 hoa_hong=doanh_thu*0.5
+        }
+         document.write('tien hoa hong:'+ hoa_hong +'vnd')
+
+    </script>
+</body>
+
+</html>
