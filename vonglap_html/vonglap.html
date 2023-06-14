@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // for (i = 1; i <= 10; i++) {
+        //     if (i % 2 !== 0) {
+        //         console.log(i)
+        //     }
+        //     // }
+        //    let i = 10
+        //    while( i >=1){
+
+        //     console.log(i)
+        //     i--
+        //    }
+        // let chay = 0;
+        // let tim = 0;
+        // while (tim <= 30) {
+        //     if (chay % 3 == 0) {
+        //         console.log(chay)
+        //         tim++
+        //     }
+        //     chay++
+        // }
+        // let i = 10;
+        // do{
+        //  console.log(i)
+        //  i--   
+        // }
+        // while(i>=3);
+        // for(i=3;i<=100;i++){
+        //   if(i % 2 !== 0){
+        //     document.write(i)
+        //   }
+        // }
+        // for (let i = 1; i <= 10; i++) {
+        //     let xu_ly = 5 * i;
+        //     document.write('5 x' + i + '='+ xu_ly+"<br>")
+        // }
+        // let text = "";
+        // for (i = 0; i <= 10; i++) {
+        //     text += "the number is : " + i + '<br>'
+        // }
+        // document.getElementById('demo').innerHTML = text;
+        // let so = parseInt(prompt('Nhập số lần muốn chạy'))
+        // let tong = 0
+        // for(i = 1 ;i<= so;i=i+1){
+        //     tong=tong+1;
+        //     alert(tong)
+        // }
+        // let i =1;
+        // while(i<100){
+        //     document.write("<hr width ="+i+"0>")
+        //     i++
+        // }
+        // let num1 = 0;
+        // let num2 = 1;
+        // let sum = 0;
+
+        // for (let i = 0; i < 20; i++) {
+        //     let so_ke_tiep = num1 + num2;
+        //     num1 = num2;
+        //     num2 = so_ke_tiep;
+        //     sum += num1;
+        // }
+
+        // document.write("Tổng của 20 số đầu tiên trong dãy Fibonacci là: " + sum);
+        
+        // Hàm tính số fibonacci thứ n
+        function fibonacci(n) {
+            if (n <= 1) {
+                return n;
+            } else {
+                return fibonacci(n - 1) + fibonacci(n - 2);
+            }
+        }           
+        // In ra 20 số fibonacci đầu tiên
+        for (var i = 0; i < 20; i++) {
+            console.log(fibonacci(i));
+        }
+    
+    </script>
+</body>
+
+</html>

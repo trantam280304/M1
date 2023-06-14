@@ -1,16 +1,83 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script>
+    <!-- <script>
         let a = parseInt(prompt('nhập cạnh a'))
         let b = parseInt(prompt('nhập cạnh b'))
         let S = (a+b)*2
         alert('diện tíc hcn : '+ S)
+    </script> -->
+
+<body>
+    <form>
+        <h2>Tính diện tích hình chữ nhật</h2>
+        <table>
+            <tr>
+                <th>Chiều dài hình chữ nhật:</th>
+                <th><input type="text" id="chieudai" placeholder="chiều dài hình chữ nhật"> </th>
+            </tr><br>
+            <tr>
+                <th>Chiều rộng hình chữ nhậ:t</th>
+                <th><input type="text" id="chieurong" placeholder="chiều dài hình chữ nhật"></th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="button" onclick="tinh()" value="Tính">
+                </th>
+            </tr>
+        </table>
+    </form>
+    <p id="dientichhcn"></p>
+    <script>
+        function tinh() {
+            let a = document.getElementById('chieudai').value;
+            let b = document.getElementById('chieurong').value;
+            a = parseInt(a)
+            b = parseInt(b)
+            let dientich = a * b;
+            document.getElementById('dientichhcn').innerHTML = 'Dien tích hình chữ nhật : ' + dientich;
+        }
     </script>
+
+
+<!-- <form>
+    <h2>Tính diện tích hình chữ nhật</h2>
+    <table>
+      <tr>
+        <th>Chiều dài hình chữ nhật:</th>
+        <th><input type="text" id="chieudai" placeholder="chiều dài hình chữ nhật"> </th>
+      </tr>
+      <tr>
+        <th>Chiều rộng hình chữ nhật:</th>
+        <th><input type="text" id="chieurong" placeholder="chiều rộng hình chữ nhật"></th>
+      </tr>   
+      <tr>
+        <th>
+          <input type="button" onclick="tinh()" value="Tính">
+        </th>
+      </tr>
+    </table>
+  </form>
+  <p id="dientichhcn"></p>
+  
+  <script>
+  function tinh() {
+    let a = document.getElementById('chieudai').value;
+    let b = document.getElementById('chieurong').value;
+    a = parseInt(a);
+    b = parseInt(b);
+    let dientich = a * b;
+    document.getElementById('dientichhcn').innerHTML = 'Diện tích hình chữ nhật: ' + dientich ;
+  }
+  </script> -->
+
 </body>
+
 </html>
