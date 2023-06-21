@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1,2,3];
+                // 0 1 2
+        // Nhập phần tử V từ người dùng
+        let V = parseInt(prompt("Nhập số nguyên V:"));
+
+        // Kiểm tra xem V có thuộc mảng đã cho hay không
+        if (arr.includes(V)) {
+            // Nếu V thuộc mảng, xoá V khỏi mảng
+            let index = arr.indexOf(V);
+            for (let i = index; i < arr.length - 1; i++) { // Dịch phần tử sang trái
+                arr[i] = arr[i + 1];
+            }
+            arr[arr.length - 1] = 0; // Gán 0 cho phần tử cuối cùng
+            document.write('Đã xoá'+ V + 'khỏi mảng. Mảng mới là:', arr);
+        } else {
+            document.write( 'không thuộc mảng đã cho.'+ V)
+        }
+    </script>
+</body>
+
+</html>

@@ -98,23 +98,35 @@
         //     }
         //   document.write('<br>')
         // }
-        // let str = '<table border = "1" >';
+        let str = '<table border = "1" >'
+        debugger;
+        for (let h = 2; h <= 9; h++) {
+            str += '<tr>';
+            for (let c = 1; c <= 10; c++) {
+                str += '<td>'+c + 'x' + h + '=' + (h * c)+'</td>';
 
-        // for (let h = 2; h <= 9; h++) {
-        //     str += '<tr>';
+            }
+            str += '</tr>';
+         
+        }
+        str += '</table>';
+        document.write(str);
 
-        //     for (let c = 1; c <= 10; c++) {
-        //         str += '<td>'
-        //         str += h + 'x' + c + '=' + (h * c);
-        //         str += '</td>';
-
-        //     }
-        //     str += '</tr>';
-
-        // }
-        // str += '</table>';
-        // document.write(str);
-        // for(let h = 1 )
+    //     <script>
+    //     let sout, i, j;
+    //     sout = "<table border='1' width='300' cellspacing='0' cellpadding='15'>";
+    //     debugger;
+    //     for (i = 1; i <= 10; i++) {
+    //         sout = sout + "<tr>";
+    //         for (j = 1; j <= 10; j++) {
+    //             sout = sout + "<td>" + j + "*" + i + "=" + i * j + "</td>";
+    //         }
+    //         sout = sout + "</tr>";
+    //         // j = 1;
+    //     }
+    //     sout = sout + "</table>";
+    //     document.write(sout);
+    // </script>
     </script>
 </body>
 

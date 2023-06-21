@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let charArray = []; // Khai báo một mảng ký tự rỗng
+        let input = prompt("Nhập vào một chuỗi ký tự: ");
+        charArray = input.split(""); // Tách chuỗi thành một mảng ký tự
+
+        // Duyệt qua mảng ký tự và thay thế các ký tự -
+        for (let i = 0; i < charArray.length; i++) {
+            if (charArray[i] === "-") {
+                charArray[i] = "_";
+            }
+        }
+
+        // Hiển thị mảng ký tự đã được thay thế
+        document.write(charArray.join(""));
+    </script>
+</body>
+
+</html>

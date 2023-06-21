@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = [-3, 5, 1, 2, 10, 7];
+        let so_dau_tien = 0
+        let so_cuoi = x.length - 1
+        while (so_dau_tien < so_cuoi) {
+            let b = x[so_dau_tien]
+            x[so_dau_tien] = x[so_cuoi];
+            x[so_cuoi] = b;
+            so_dau_tien++
+            so_cuoi--
+        }
+        document.write(x)
+    </script>
+</body>
+
+</html>
