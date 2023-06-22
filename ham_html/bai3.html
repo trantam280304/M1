@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <!-- <script>
+        let num1 = parseInt(prompt("nhap so thu 1"))
+        let num2 = parseInt(prompt("nhap so thu 2"))
+
+        function thamso(so1, so2) {
+            if (so1 > so2) {
+                alert('số thứ nhất lớn hơn số thứ 2')
+            } else {
+                return so1 + so2
+                alert('kết quả là ' + a)
+            }
+        }
+        let a = thamso(num1, num2)
+    </script>  -->
+     <form >
+    <label>Nhập số thứ nhất</label><br>
+    <input type="number"  id="so1" placeholder="số thứ nhất" required ><br><br>
+    <label>Nhập số thứ hai </label><br>
+    <input type="number"  id="so2" placeholder="số thứ hai" required ><br><br>
+    <input type="button" value="Tổng" onclick="tong()">
+    <input type="button"  value="Hiệu" onclick="hieu()">
+    <input type="button"  value="Tích" onclick="tich()">
+    <input type="button"  value="Thưog" onclick="thuong()">
+
+    <p id="sothuong"></p>
+    <p id ="sotich"></p>
+    <p id="sotong"></p>
+    <p id="sohieu"></p>
+    <p id="sosanh"></p>
+   </form>
+    <script>
+        function tong() {
+            let so1 = document.getElementById("so1").value
+            let so2 = document.getElementById("so2  ").value
+            let tong = parseInt(so1) + parseInt(so2)
+            if (so1 > so2) {
+                document.getElementById("sosanh").innerHTML = "số thứ nhất lớn hơn số thứ hai"
+            } else {
+                document.getElementById("sotong").innerHTML ="Tổng hai số là : " + tong
+            }
+        }
+        function hieu() {
+            let so1 = document.getElementById("so1").value
+            let so2 = document.getElementById("so2").value
+            let hieu = parseInt(so1) - parseInt(so2)
+            if (so1 > so2) {
+                document.getElementById("sosanh").innerHTML = "số thứ nhất lớn hơn số thứ hai"
+            } else {
+                document.getElementById("sohieu").innerHTML ="Hiệu hai số là : " + hieu
+            }
+        }
+        function tich() {
+            let so1 = document.getElementById("so1").value
+            let so2 = document.getElementById("so2").value
+            let tich = parseInt(so1) * parseInt(so2)
+            if (so1 > so2) {
+                document.getElementById("sosanh").innerHTML = "số thứ nhất lớn hơn số thứ hai"
+            } else {
+                document.getElementById("sotich").innerHTML ="Tích hai số là : " + tich
+            }
+        }
+        function thuong() {
+            let so1 = document.getElementById("so1").value
+            let so2 = document.getElementById("so2").value
+            let thuong = parseInt(so1) / parseInt(so2)
+            if (so1 > so2) {
+                document.getElementById("sosanh").innerHTML = "số thứ nhất lớn hơn số thứ hai"
+            } else {
+                document.getElementById("sothuong").innerHTML ="Thương hai số là : " + thuong
+            }
+        }
+    </script>
+</body>
+
+</html> 

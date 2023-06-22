@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Bình phương hai số</h2>
+    <label> Nhập số bất kì</label><br>
+    <input type="number"  value="number" id="so" placeholder="điền số vào đây">
+    <input type="button" value="click me" onclick="binhphuong()">
+    <p id="binhphuong"></p>
+
+    <script>
+        function binhphuong() {
+            let so = document.getElementById("so").value;
+            let binh_phuong = parseInt(so)*parseInt(so)
+
+            document.getElementById("binhphuong").innerHTML ="Bình phương của số là : "+ binh_phuong;
+        }
+    </script>
+</body>
+</html>

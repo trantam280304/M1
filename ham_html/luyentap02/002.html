@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Bán kính là :</label><br>
+    <input type="number" value="number" id="so" placeholder="nhập số vào đây">
+    <input type="button" value="Chu vi" onclick="chuvi()">
+    <input type="button" value="Diện tích" onclick="dientich()">
+    <p id="chu_vi"></p>
+    <p id="dien_tich"></p>
+    <script>
+        function chuvi() {
+            let r = document.getElementById("so").value;
+            let chu_vi = parseInt(r)*2*Math.PI
+            document.getElementById("chu_vi").innerHTML = "Chu vi là: " +   chu_vi
+            
+        }
+        function dientich() {
+            let r = document.getElementById("so").value;
+            let dien_tich = parseInt(r)*parseInt(r)*Math.PI
+            document.getElementById("dien_tich").innerHTML= "Diện tích là : " + dien_tich
+        }
+
+    </script>
+
+
+</body>
+
+</html> 
