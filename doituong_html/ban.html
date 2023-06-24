@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tam = {
+            ten: 'Tâm',
+            tuoi: 19,
+
+            hoc: function (mon_hoc) {
+                console.log('Tôi đang học : ' + mon_hoc);
+
+            },
+            giai_tri: function (game) {
+                console.log('Tôi đang chơi game :' + game);
+            },
+            gioi_thieu: function () {
+                console.log('Tôi tên là :' + this.ten);
+                console.log('Tuổi của tôi là :' + this.tuoi);
+
+            }
+        }
+        tam.gioi_thieu()
+        tam.hoc('Toán')
+        tam.giai_tri('PUBG')
+
+
+
+        let nghia = {
+            ten: 'Nghĩa',
+            tuoi: 29,
+
+            hoc: function (mon_hoc) {
+                console.log('Tôi đang học : ' + mon_hoc);
+
+            },
+            giai_tri: function (game) {
+                console.log('Tôi đang chơi game :' + game);
+            },
+            gioi_thieu: function () {
+                console.log('Tôi tên là :' + this.ten);
+                console.log('Tuổi của tôi là :' + this.tuoi);
+
+            }
+        }
+        nghia.gioi_thieu()
+        nghia.hoc('Văn')
+        nghia.giai_tri('Tài xỉu')
+
+    </script>
+
+</body>
+
+</html>

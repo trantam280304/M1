@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Human = function () {
+            // thuộc tính
+            this.ten = " "
+            this.tuoi = 0;
+
+            // phương thức
+            this.hoc = function (mon_hoc) {
+                console.log(this.ten +" "+'đang học' +" "+ mon_hoc);
+
+            }
+
+            this.gia_tri = function (game) {
+                console.log(this.ten + " "+'đang giải trí'+' ' +game);
+            }
+        }
+
+        //  sinh ra ba đối tượng
+        let phu = new Human();
+        //   thiết lập giá trị thuộc tính
+        phu.ten = "Phú"
+        phu.tuoi = 32 
+        phu.hoc('java')
+        phu.gia_tri('tài xỉu')
+
+
+        let vu = new Human();
+        vu.ten = "Vũ"
+        vu.tuoi = 21
+        vu.hoc('java')
+        vu.gia_tri('tài xỉu')
+
+
+
+
+        let lam = new Human();
+        lam.ten = "Lam"
+        lam.tuoi = 27
+       lam.hoc('java')
+       lam.gia_tri('tài xỉu')
+
+
+        console.log(phu);
+        console.log(vu);
+        console.log(lam);
+
+    </script>
+</body>
+
+</html>

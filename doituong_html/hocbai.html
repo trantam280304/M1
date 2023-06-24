@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tam = {
+            // phương thức
+            ten: 'Tâm',
+            tuoi: 19,
+            toc: 'black',
+            dia_chi: 'Gio linh',
+            // phương thức
+            hoc: function (mon_hoc) {
+                console.log('Toi dang hoc: ' + mon_hoc);
+            },
+            thethao: function () {
+                console.log('Choi the thao');
+
+            },
+            annnhau: function () {
+                console.log('An nhau');
+
+            },
+            gioi_thieu: function () {
+                console.log('Xin chào các bạn');
+                console.log('Tôi ten la :' + this.ten);
+                console.log('Năm nay tôi:' + this.tuoi + ' ' + 'tuổi');
+                console.log('Tôi có mái tóc màu:' + this.toc);
+                console.log('Hiện tại tôi đang ở :' + this.dia_chi);
+
+
+                console.log('Tôi có những hoạt động sau: ');
+                this.hoc('java')
+                this.annnhau()
+             
+            }
+
+
+        }
+        console.log(tam);
+        console.log(tam.tuoi);
+        console.log(tam.toc);
+        console.log(tam.dia_chi);
+        tam.hoc('javaScript')
+        tam.thethao()
+        tam.annnhau()
+        tam.gioi_thieu()
+    </script>
+</body>
+
+</html>

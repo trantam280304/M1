@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let HCN = function () {
+            this.dai = 0;
+            this.rong = 0;
+
+            this.tinhdien_tich = function () {
+                let KQ = this.dai * this.rong
+                return KQ
+
+            }
+            this.tinhchu_vi = function () {
+                let KQ = (this.dai + this.rong) * 2
+                 return KQ
+            }
+        }
+        // khởi tạo đối tượng
+        let hinhchunhat = new HCN();
+        // thiết lập giá trị cho chiều dài
+        hinhchunhat.dai = 20;
+        // thiết lập giá trị cho chiều rong.
+        hinhchunhat.rong = 10;
+
+        let s = hinhchunhat.tinhdien_tich()
+        console.log(s);
+ 
+        let cv = hinhchunhat.tinhchu_vi()
+        console.log(cv);
+
+    </script>
+</body>
+
+</html>
